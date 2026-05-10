@@ -39,3 +39,37 @@ public class Main {
 
                     case 2:
                         resultado = n1 - n2;
+                        System.out.println("Resultado: " + resultado);
+                        break;
+
+                    case 3:
+                        resultado = n1 * n2;
+                        System.out.println("Resultado: " + resultado);
+                        break;
+
+                    case 4:
+
+                        if (n2 == 0) {
+                            System.out.println("Erro: divisão por zero.");
+                        } else {
+                            resultado = n1 / n2;
+                            System.out.println("Resultado: " + resultado);
+                        }
+
+                        break;
+
+                    default:
+                        System.out.println("Opção inválida.");
+                }
+
+            } else if (opcao != 0) {
+                System.out.println("Opção inválida.");
+            }
+
+        } while (opcao != 0);
+
+        System.out.println("Calculadora encerrada.");
+
+        sc.close();
+    }
+}
